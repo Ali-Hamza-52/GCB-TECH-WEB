@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+button,input{
+    all: unset;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.gap-20{
+    gap: 20px;
+}
+
+.outer{
+    height: 100vh;
+    background: #7a49b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innear{
+    background: #2a2a68;
+    border-radius: 10px;
+}
+
+.innear>h1{
+    background: #242156;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.innear>form{
+    padding: 20px 30px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input{
+    background: white;
+    color: rgb(163, 163, 163);
+}
+
+.chk{
+    display: flex;
+    gap: 15px;
+}
+
+button{
+    background: rgba(0, 128, 0, 0.74);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    align-self: flex-end;
+}
