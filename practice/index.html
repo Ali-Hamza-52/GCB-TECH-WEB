@@ -1,36 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced HTML Form Example">
+    <meta name="author" content="John Doe">
+    <title>Advanced Form Example</title>
+</head>
+<body>
+    <h1>Advanced HTML Form</h1>
 
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="outer">
-      <div class="innear">
-        <h1>Registration Form</h1>
+    <form id="advancedForm" action="submit.php" method="post" enctype="multipart/form-data" autocomplete="on" target="_blank">
+  
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <br><br>
 
-        <form action="">
-          <div>
-            <input type="text" name="" id="" />
-            <input type="text" name="" id="" />
-            <input type="email" name="" id="" />
-            <input type="password" name="" id="" />
-            <div class="chk">
-              <input type="checkbox" />
-              <label for="">Lorem ipsum dolor sit amet.</label>
-            </div>
-            <div class="chk">
-              <input type="checkbox" />
-              <label for="">Lorem ipsum dolor sit amet.</label>
-            </div>
-          </div>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
 
-          <button type="submit">Register</button>
-        </form>
-      </div>
-    </div>
-  </body>
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" placeholder="Enter your password" required>
+        <br><br>
+
+  
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99" placeholder="Enter your age" required>
+        <br><br>
+
+  
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+  
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+        <br><br>
+
+  
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file" accept=".jpg,.png" multiple>
+        <br><br>
+
+  
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+
+  
+        <label>Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies" value="Reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="sports" name="hobbies" value="Sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="gaming" name="hobbies" value="Gaming">
+        <label for="gaming">Gaming</label>
+        <br><br>
+
+  
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+        </select>
+        <br><br>
+
+  
+        <button type="submit">Submit</button>
+    </form>
+
+   <form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</for>
+
+    <script>
+        document.getElementById('advancedForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+
+            let data = 'Form Data:\n';
+            for (let [key, value] of formData.entries()) {
+                data += `${key}: ${value}\n`;
+            }
+            alert(data);
+        });
+    </script>
+</body>
 </html>

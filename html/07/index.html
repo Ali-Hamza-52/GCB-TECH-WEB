@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Charaset Encoding -->    
+    <meta charset="UTF-8"/>
+
+    <!-- SEO Keywords-->
+     <meta name="keywords" content="HTML, CSS, JS, GCB-TECH"/>
+
+    <!-- Page Description -->
+     <meta name="description" content="GCB-TECH is web application"/>
+
+    <!-- Author Description -->
+     <meta name="author" content="Ali Hamza"/>
+
+    <!-- Auto Refresh -->
+      <!-- <meta http-equiv="refresh" content="2" /> -->
+
+    <!-- Rebots Prevent -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <title>Meta and Forms</title>
+</head>
+<body> 
+    <!-- 
+        meta
+        forms
+        js
+        id/class
+    -->
+
+    <form action="submit.php" method="post" >
+        <h1>Student Registration Form</h1>
+        <div>
+            <label for="studentName">Your Name: </label>
+            <input type="text" placeholder="Enter Your Name" id="studentName" name="studentName" autofocus tabindex="113"/>
+        </div>
+        <br />
+        <br />
+        <input type="text" placeholder="Your Father Name" name="fatherName" tabindex="114"/>
+        <br />
+        <br />
+        <input type="password" placeholder="Enter Your password" name="password" tabindex="115" required>
+        <br />
+        <br />
+        <input type="email" placeholder="Enter Your Email" name="email" tabindex="116" autocomplete="off" />
+        <br />
+        <br />
+        <input type="number" placeholder="Enter Your age" name="age" tabindex="117" autocomplete="off" min="0" max="100"/>
+        <br />
+        <br />
+        <input type="file" >
+        <br />
+        <br />
+        <input type="text" placeholder="Enter Your City" list="city" >
+        <datalist id="city">
+            <option value="Burewala"/>
+            <option value="Lahore"/>
+            <option value="Vehari"/>
+            <option value="Multan"/>
+        </datalist>
+        <br />
+        <br />
+        <select id="classes">
+            <option disabled>Select Your Semester</option>
+            <option value="sem-1">Semeter 1</option>
+            <option value="sem-2">Semeter 2</option>
+            <option value="sem-3">Semeter 3</option>
+            <option value="sem-4">Semeter 4</option>
+            <option value="sem-5">Semeter 5</option>
+            <option value="sem-6">Semeter 6</option>
+            <option value="sem-7">Semeter 7</option>
+            <option value="sem-8">Semeter 8</option>
+        </select>
+        <br />
+        <br />
+        <input type="range">
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
