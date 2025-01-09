@@ -1,0 +1,80 @@
+
+/*
+ universal selector *
+ id -> #
+ class -> .
+ tag ->  h2,img,h1,p
+ combinator selector
+ .sh , #main-heading, .th , h1 ,p {
+    
+ }
+ 
+ #main-heading{
+ 
+ }
+
+ .theme{
+ 
+ }
+
+*/
+
+/* *{
+    background-color: burlywood;
+}
+
+#main-heading{
+    background-color: violet;
+}
+
+.sh{
+    background-color: gray;
+}
+
+table{
+    background-color: blueviolet;
+}
+
+#main-heading , .th , table {
+    background-color: chartreuse;
+    color: rgb(31, 30, 30);
+} */
+ 
+/* 
+    units
+
+    px
+    rem
+    em
+
+*/
+
+/* 
+    sides
+
+    top
+    rigth
+    bottom
+    left
+*/
+
+.div1{
+    background-color: chocolate;
+    width: 200px;
+    height: 200px;
+    /* padding-top: 100px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px; */
+    /* padding: 100px 20px 30px 30px; */
+    padding: 100px 50px;
+
+    border: 10px;
+    border-color: yellow;
+    border-right-style: groove;
+    border-top-style:double ;
+    border-bottom-style: dotted ;
+    border-left-style: solid;
+    border-left-color: black;
+    border-left-width: 5px;
+}
