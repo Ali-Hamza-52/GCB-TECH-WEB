@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+
+  <style>
+    .main {
+      display: grid;
+      place-items: center;
+      gap: 30px;
+    }
+
+    .main div {
+      height: 200px;
+      width: 200px;
+      background-color: rebeccapurple;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div id="div1"></div>
+      <div id="div2"></div>
+      <div id="div3"></div>
+    </div>
+
+    <script>
+        document.getElementById('div1').style.backgroundColor="red";
+        document.getElementById('div2').style.backgroundColor="gray";
+        document.getElementById('div3').style.backgroundColor="blue";
+    </script>
+  </body>
+</html>
