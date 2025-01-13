@@ -1,0 +1,44 @@
+/* 
+    Box Model
+        1- Content-Box
+        2- Border-Box 
+
+    1- content
+    2- padding
+    3- border
+    4- outline
+    5- margin 
+*/
+
+/* 
+border-box: 
+width:300     pl-50 pr-50 300-100=200     bl-10 br-10 300-100-20=180 
+heigth:300    pb-30 pt-30 300-100=200     bt-10 bb-10 300-100-20=180     
+
+content-box:
+width:300     pl+50 pr+50 300+100=400     bl+10 br+10 300+100+20=420 
+heigth:300    pb+30 pt+30 300+60=360     bt+10 bb+10 300+100+20=420   
+
+*/
+
+.content-box{
+    box-sizing: content-box;
+    width: 300px;
+    height: 300px;
+    padding: 30px 50px;
+    border: 10px;
+    border-color: cadetblue;
+    border-style: solid;
+    background-color: blueviolet;
+}
+
+.border-box{
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    padding: 30px 50px;
+    border: 10px;
+    border-color: cadetblue;
+    border-style: solid;
+    background-color: rgb(224, 243, 172);
+}

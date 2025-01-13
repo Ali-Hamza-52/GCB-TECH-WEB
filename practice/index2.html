@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <img id="img" src="./images/image1.png" alt="">
+
+
+    <script>
+
+        let index=0;
+
+        setInterval(()=>{
+            if(index<5){
+                index +=1;
+            }else{
+                index=0;
+            }
+
+            document.getElementById('img').src=`./images/image${index+1}.png`;
+        },3000)
+    </script>
+    
+</body>
+</html>
