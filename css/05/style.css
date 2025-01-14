@@ -1,0 +1,140 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+/* 
+    position
+        The position property specifies the type of positioning method used for an element.
+            1: relative
+                Normal positions
+            2: absolute
+            3: fixed
+            4: sticky
+            5: static
+
+            top
+            right
+            bottom
+            left
+
+*/
+
+.main-container{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    /* gap: 50px; */
+    padding: 30px;
+    background-color: cadetblue;
+}
+
+.relative{
+    width: 20px;
+    height: 20px;
+    background-color: blueviolet;
+    position: relative;
+    top: 250px;
+    left: 20px;
+   
+}
+
+.relative1,.relative2,.relative3{
+
+    width: 200px;
+    height: 200px;
+}
+
+.relative1{
+    background-color: rgb(220, 214, 156);
+}
+
+.relative2{
+    background-color: rgb(179, 169, 84);
+}
+
+.relative3{
+    background-color: rgb(40, 40, 34);
+
+}
+
+.main-section-wrapper{
+    width: 300px;
+    margin: 0px auto;
+}
+
+.profile-card {
+    background: #2b022c;
+    color: white;
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pro-badge {
+    background: gold;
+    color: black !important;
+    font-weight: bold;
+    padding: 3px 10px;
+    width: fit-content;
+    border-radius: 10px;
+    position: relative;
+    bottom: 120px;
+    left: 10px;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.profile-card h2 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.profile-card p {
+    font-size: 14px;
+    color: #d4d4d4;
+    margin: 5px 0;
+}
+
+.profile-card .buttons {
+    margin: 15px 0;
+}
+
+.profile-card .buttons button {
+    background: #a100ff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.profile-card .buttons button:hover {
+    background: #e100ff;
+}
+
+.profile-card .skills {
+    margin-top: 10px;
+}
+
+.profile-card .skills span {
+    display: inline-block;
+    background: #40004c;
+    color: white;
+    font-size: 12px;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
