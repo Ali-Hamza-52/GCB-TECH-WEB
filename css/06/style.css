@@ -1,0 +1,212 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* 
+    Positions
+
+        Relative
+            Normal Position 
+        Absolute
+            Scale according to parent
+        Fixed
+        Sticky
+        Static
+
+        top
+        left
+        right
+        bottom
+*/
+.relative {
+    background-color: gray;
+    width: 900px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.div1,
+.div2,
+.div3,
+.div4 {
+    height: 200px;
+    width: 200px;
+    background-color: violet;
+}
+
+.div1 {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(137, 206, 152);
+}
+
+.div2 {
+    background-color: rgb(107, 121, 31);
+}
+
+.div3 {
+    background-color: rgb(107, 13, 71);
+}
+
+.div4 {
+    background-color: rgb(255, 143, 143);
+}
+
+.aboslute {
+    background-color: rgb(195, 203, 247);
+    width: 900px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.aboslute-1{
+    height: 200px;
+    background-color: blue;
+    width: 200px;
+}
+.aboslute-2{
+    height: 200px;
+    background-color: rgb(140, 209, 140);
+    width: 200px;
+}
+.aboslute-3{
+    height: 200px;
+    background-color: blue;
+    width: 200px;
+}
+.aboslute-4{
+    height: 200px;
+    background-color: blue;
+    width: 200px;
+}
+
+.aboslute-1{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+}
+.fixed {
+    background-color: rgb(195, 203, 247);
+    width: 900px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fixed-1{
+    height: 200px;
+    background-color: blue;
+    width: 200px;
+}
+.fixed-2{
+    height: 200px;
+    background-color: rgb(140, 209, 140);
+    width: 200px;
+}
+.fixed-3{
+    height: 200px;
+    background-color: blue;
+    width: 200px;
+}
+.fixed-4{
+    height: 200px;
+    background-color: blue;
+    width: 200px;
+}
+
+.fixed-2{
+    position: fixed;
+    top: 0px;
+    left: 30px;
+}
+.fixed-3{
+    position: fixed;
+    top: 200px;
+    left: 30px;
+}
+.sticky {
+    background-color: rgb(195, 203, 247);
+    width: 900px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sticky-1{
+    height: 200px;
+    background-color: blue;
+    width: 200px;
+}
+.sticky-2{
+    height: 200px;
+    background-color: rgb(140, 209, 140);
+    width: 200px;
+}
+.sticky-3{
+    height: 200px;
+    background-color: blue;
+    width: 200px;
+}
+.sticky-4{
+    height: 200px;
+    background-color: blue;
+    width: 200px;
+}
+
+.sticky-2{
+    position: sticky;
+    top: 10px;
+}
+
+.outer{
+    /* display: inline-block; */
+    height: 500px;
+    width: 500px;
+    position: relative;
+    background-color: blueviolet;
+}
+
+.inner{
+    /* display: inline-block; */
+    height: 400px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-color: chartreuse;
+}
+
+.inner-1{
+    /* display: inline-block; */
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(84, 90, 77);
+}
+.inner-2{
+    /* display: inline-block; */
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(132, 221, 169);
+}
+
