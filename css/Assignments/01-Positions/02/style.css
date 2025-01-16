@@ -1,0 +1,92 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6e2e2;
+}
+
+/* Container */
+.container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+}
+
+/* Common panel styles */
+.panel {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #00ff9d;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* Center div */
+.center-div {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 240px;
+    top: 240px;
+    background-color: #008080;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+}
+
+/* Individual panel positions */
+.panel-1 {
+    left: 250px;
+    border-radius:20px;
+    top: 100px;
+}
+
+.panel-2 {
+    right: 140px;
+    border-radius:20px;
+    top: 140px;
+}
+
+.panel-3 {
+    right: 100px;
+    border-radius:20px;
+    top: 250px;
+}
+
+.panel-4 {
+    right: 140px;
+    border-radius:20px;
+    top: 360px;
+}
+
+.panel-5 {
+    left: 250px;
+    border-radius:20px;
+    bottom: 100px;
+}
+
+.panel-6 {
+    left: 140px;
+    border-radius:20px;
+    bottom: 140px;
+}
+
+.panel-7 {
+    left: 100px;
+    border-radius:20px;
+    top: 250px;
+}
+
+.panel-8 {
+    left: 140px;
+    border-radius:20px;
+    top: 140px;
+}
