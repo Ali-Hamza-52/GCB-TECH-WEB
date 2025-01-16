@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* 
+    Combinator Selectors
+        Descendant combinator 
+            usage: div p
+        child combinator
+            usage: div > p
+        next sibling combinator
+            usage: div + p
+        subsequent combinator
+            usage: div ~ p
+*/
+
+
+
+/* div h1{
+    background-color: yellow;
+} */
+
+/* div>h1{
+    background-color: yellow;
+} */
+
+/* div + p{
+    background-color: yellow;
+} */
+/* div ~ p{
+    background-color: yellow;
+} */
