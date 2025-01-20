@@ -1,0 +1,41 @@
+/*
+    Shadow
+    text-shadow:
+        h1 , p  , pre
+    box-shadow:
+        div , main
+*/
+
+.box1 {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 200px;
+    /* box shadow 
+        offset-x
+        offset-y
+        blur-radius
+        spread-radius
+        color
+        inset
+    */
+    /* box-shadow: 20px 20px black; */
+    /* box-shadow: -20px -20px 1px 5px black; */
+    /* box-shadow: -20px -20px 1px 5px black, 20px 20px 1px 5px yellow ; */
+    box-shadow: -20px -20px 1px 5px black, 20px 20px 1px 5px yellow inset;
+}
+
+p {
+    text-align: center;
+    /* text shadow 
+        offset-x
+        offset-y
+        blur-radius
+        color
+    */
+    /* text-shadow: 12px 12px 3px rgb(201, 106, 106); */
+    /* text-shadow: 2px 2px 2px black, 4px 4px 2px yellow; */
+    text-shadow: 2px 2px 2px black, 4px 4px 2px yellow, 6px 6px 2px blue;
+}
