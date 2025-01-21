@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: calc(20px + 0.5vw);
+}
+
+/* 
+    Units
+        Absolute Unit
+            Do not changed on the based viewport or parent
+            Exp:
+                px : pexels = width:50px;
+                cm : centimeter = width 50cm;
+                mm : milimeters = height: 200mm;
+                in : inch (1in = 96px) = width:192in;
+                pt : points (1pt = 1/72in , 1pt = 1.33px) = font-size:10pt;
+                pc : picas ( 1pc = 12pt , 1pc = 16px ) = font-size:10pt;
+
+        Relative Unit
+            Adjust dynamically on the based of viewport or parent , font-size
+            Exp:
+                %  : percentage = width:100%;
+                vh : view height
+                vw : view width
+                em : font-size:2em;
+*/
+
+#h1 {
+    font-size: 1pc;
+}
+
+#h2{
+    font-size: 1rem;
+}
+/* .box1{
+    background-color: blue;
+    max-width: 700px;
+} */
+
+
+.box1 {
+    background-color: rgb(155, 155, 209);
+    width: 50vw;
+}
+
+.box2 {
+    margin-top: 10px;
+    background-color: blue;
+    width: 50vw;
+    height: 100vh;
+}
