@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        width: 50px;
+        height: 50px;
+        background-color: blueviolet;
+      }
+
+      button:hover {
+        background-color: yellow;
+      }
+
+      button::before {
+        content: "hamza";
+      }
+
+      a {
+        display: inline-block;
+        width: 70px;
+        color: white;
+        text-align: center;
+        border-radius: 30px;
+        height: 30px;
+        background-color: blueviolet;
+      }
+      a:visited {
+        background-color: red;
+      }
+
+      a:hover {
+        background: grey;
+      }
+
+      a:active {
+        background-color: yellow;
+      }
+
+      .container {
+        width: 700px;
+        height: 70vh;
+        background-color: grey;
+        display: flex;
+        gap: 30px;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <a href="https://www.google.com/" target="_blank">
+        google
+    </a>
+
+    <br>
+    <br>
+    <br>
+    <button>
+        Ali
+    </button>
+     -->
+
+    <div class="container">
+      <button id="boxes" class="box box1">box1</button>
+      <button onclick="showBoxName(2)" class="box box2">box2</button>
+      <button onclick="showBoxName(3)" class="box box3">box3</button>
+      <button onclick="showBoxName(4)" class="box box4">box4</button>
+      <button onclick="showBoxName(5)" class="box box5">box5</button>
+    </div>
+
+    <script>
+      //   const btn1 = document.getElementsByClassName("box1");
+      document.getElementsByClassName("box1").addEventListener('click', function (){
+        alert("i am event listener ");
+      })
+      //   btn1.addEventListener("click", () => {
+      //     console.log("i am called")
+        //   btn1.style.backgroundColor = "red";
+      //   });
+      const showBoxName = (boxNumber) => {
+        alert("i am box " + boxNumber);
+      };
+    </script>
+  </body>
+</html>
