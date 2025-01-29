@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.box{
+    margin: 100px auto;
+    width: 700px;
+    height: 350px;
+    border: 2px solid black;
+    /* background-image: linear-gradient(to right ,red,yellow,blue); */
+    /* background-image: linear-gradient(to right ,red 10%,yellow 30%,blue);    */
+    background-image: repeating-linear-gradient(to right,red ,yellow 10%,blue 20%);
+}
+.box1{
+    margin: 100px auto;
+    width: 700px;
+    height: 350px;
+    border: 2px solid black;
+    /* background-image: radial-gradient(circle,red,blue,green); */
+    /* background-image: radial-gradient(closest-side  at 20% 20% ,yellow 50%,red,rgb(43, 162, 231)); */
+    /* background-image: radial-gradient(farthest-side  at 20% 20% ,yellow 50%,red,rgb(43, 162, 231)); */
+    background-image: repeating-radial-gradient(circle, yellow,red 10%,rgb(43, 162, 231) 20%);
+}

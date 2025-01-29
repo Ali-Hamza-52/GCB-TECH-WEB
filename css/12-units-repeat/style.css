@@ -6,11 +6,12 @@
  } 
 
 html{
-    font-size: calc(16px + 0.3vw);
+    font-size: calc(14px + 1vmin);
+    /* width: calc(15px + 5.9vw); */
 }
 
 html{
-    background-color: bisque;
+    background-color: rgb(99, 93, 86);
 }
 
 body{
@@ -72,3 +73,10 @@ div{
     background-color: rgb(30, 129, 210);
     
 }
+/* 
+.div4{
+    width: 4rem;
+    height: 400px;
+    background-color: rgb(13, 94, 97);
+    margin-top: 20px;
+} */

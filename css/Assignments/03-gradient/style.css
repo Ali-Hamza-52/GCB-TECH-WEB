@@ -1,0 +1,74 @@
+.container {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.task1-prism {
+    background: linear-gradient(
+        135deg,
+        #FF0000 0%,
+        #FF7F00 15%,
+        #FFFF00 30%,
+        #00FF00 45%,
+        #0000FF 60%,
+        #4B0082 75%,
+        #8B00FF 90%,
+        #FF0000 100%
+    );
+}
+
+
+.task2-spotlight {
+    background: radial-gradient(
+        circle at center,
+        white 0%,
+        #ffdb4d 20%,
+        #ff9966 40%,
+        #cc3300 60%,
+        #660000 80%
+    );
+}
+
+.task3-hypnotic {
+    background: conic-gradient(
+        black 0deg,
+        black 30deg,
+        white 30deg,
+        white 60deg,
+        black 60deg,
+        black 90deg,
+        white 90deg,
+        white 120deg,
+        black 120deg,
+        black 150deg,
+        white 150deg,
+        white 180deg,
+        black 180deg,
+        black 210deg,
+        white 210deg,
+        white 240deg,
+        black 240deg,
+        black 270deg,
+        white 270deg,
+        white 300deg,
+        black 300deg,
+        black 330deg,
+        white 330deg,
+        white 360deg
+    );
+}
+
+.task4-stripes {
+    background: linear-gradient(
+        45deg,
+        #606c88 25%,
+        #3f4c6b 25%,
+        #3f4c6b 50%,
+        #606c88 50%,
+        #606c88 75%,
+        #3f4c6b 75%
+    );
+    background-size: 50px 50px;
+}
