@@ -72,3 +72,29 @@
     );
     background-size: 50px 50px;
 }
+
+.g1{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    /* background-image: conic-gradient(red 30deg, yellow 90deg ); */
+    background-image: repeating-conic-gradient(
+        black 0deg 30deg,
+        white 30deg 60deg
+    );
+    /* background-image: repeating-conic-gradient(
+        black 0deg 30deg,
+        white 30deg 60deg,
+        black 60deg 90deg,
+        white 90deg 120deg,
+        black 120deg 150deg,
+        white 150deg 180deg,
+        black 180deg 210deg,
+        white 210deg 240deg,
+        black 240deg 270deg,
+        white 270deg 300deg,
+        black 300deg 330deg,
+        white 330deg 360deg
+    ); */
+}   
