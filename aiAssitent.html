@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>AI Assitent</h1>
+    
+        <input type="text" name="prompt" placeholder="Ask me anything...">
+        <button onclick="ask()">Ask</button>
+
+        <!-- Microphone use -->
+         <button onclick="startVoice()">Microphone</button>
+
+    <script>
+        const startVoice = () => {
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            const recognition = new SpeechRecognition();
+            recognition.start();
+            recognition.addEventListener('result', e => {
+                document.getElementsByName("prompt")[0].value = e.results[0][0].transcript;
+                ask();
+            })
+            recognition.addEventListener('end', recognition.start);
+        }
+        
+        function ask() {
+            let textToSpeak="hello i am ali hamza.";
+            textToSpeak = document.getElementsByName("prompt")[0].value;
+
+            const speech = new SpeechSynthesisUtterance();
+            speech.text = textToSpeak;
+            speech.volume = 3;
+            speech.rate = 1;
+            speech.pitch = 3;
+            //urdu lang
+            speech.lang = 'ur-PK';
+            // speech.lang = 'en-US';
+            window.speechSynthesis.speak(speech);
+            //console.log(textToSpeak);
+        }
+       
+    </script>
+    
+</body>
+</html>
