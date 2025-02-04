@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  
+    flexbox
+        flexbox is one dimension layout manager that manages the layout in x,y direction.
+        flex container
+            div 
+        flex item
+            p , img ,div , span
+
+        1- flex-direction
+            By default-row
+            flex-direction: row | row-reverse | column | column-reverse
+        2- flex-wrap
+        3- flex-flow
+        4- justify-content
+            Align items horizontally
+            flex-start | flex-end | center | space-between | space-around
+        5- align-items
+            Align items vertically
+*/
+
+.container{
+    width: 900px;
+    height: 500px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(23, 194, 142);    
+}

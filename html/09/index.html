@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete HTML</title>
+  </head>
+  <body>
+    <h1>heading-1</h1>
+    <h2>heading-2</h2>
+    <h3>heading-3</h3>
+    <h4>heading-4</h4>
+    <h5>heading-5</h5>
+    <h6>heading-6</h6>
+
+    <p>
+      Lorem ipsum dolor &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sit amet consectetur
+      adipisicing elit. Quisquam, quos.
+    </p>
+
+    <!-- Entities -->
+    <p>&gt; &lt; &pound; &copy; &amp; &reg; &deg;</p>
+    <!-- Emojies -->
+    <p>&#128514; &#128515; &#128516; &#128517; &#128518; &#128519;</p>
+    <!-- Anchor -->
+    <a href="./index1.html">About Us</a>
+    <!-- 
+        Path
+            Relative path:
+                folder within project directory
+            aboslute path
+                complete path google
+    -->
+    <img
+      src="../../public/images/icon.jpeg"
+      width="200px"
+      height="200px"
+      alt="Image is no found"
+    />
+
+    <video
+      src="../../public/video/video.mp4"
+      poster="../../public/images/layer1.jpg"
+      width="200px"
+      height="200px"
+      controls
+      loop
+    ></video>
+
+    <audio src="" controls></audio>
+
+    <!-- Table -->
+    <!-- 
+        Table head
+        Table body
+        Table footer
+
+       How to create table
+         1: create a row "tr"
+         2: create a cell "td"
+         3: create a table heading "th"
+        Spaning
+            colspan - span multiple columns
+            rowspan - span multiple rows
+     -->
+    <br />
+    <br />
+
+    <table border="2px">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Class</th>
+          <th>CGPA</th>
+          <th>Action</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hamza</td>
+          <td>23</td>
+          <td>BSIT</td>
+          <td>3.9</td>
+          <td><a href="#">Edit</a></td>
+          <td><a href="#">Delete</a></td>
+        </tr>
+        <tr>
+          <td>Ali</td>
+          <td>22</td>
+          <td>BSIT</td>
+          <td>3.9</td>
+          <td><a href="#">Edit</a></td>
+          <td><a href="#">Delete</a></td>
+        </tr>
+        <tr>
+          <td>Ali</td>
+          <td>22</td>
+          <td>BSIT</td>
+          <td>3.9</td>
+          <td><a href="#">Edit</a></td>
+          <td><a href="#">Delete</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- One Student Marks Table -->
+    <br />
+    <br />
+    <table border="2px">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Math</th>
+          <th>English</th>
+          <th>Science</th>
+          <th>Islamiat</th>
+          <th>Urdu</th>
+          <th>Islamiat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hamza</td>
+          <td>90</td>
+          <td>80</td>
+          <td>70</td>
+          <td>60</td>
+          <td>50</td>
+          <td>40</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" rowspan="2">Total</td>
+          <td colspan="4">300</td>
+        </tr>
+        <tr>
+          <td colspan="4">90%</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
