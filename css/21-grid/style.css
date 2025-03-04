@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+/* 
+    Grid
+        Grid is 2D layout Manager. It is used to create complex layouts.
+        Grid is a collection of rows and columns. 
+    
+        Grid Items
+            Grid Container ke andar jo bhi child elements hote hain, woh Grid Items hote hain.
+
+        Grid Lines
+            Yeh woh horizontal aur vertical lines hain jo rows aur columns ko separate karti hain.
+
+        Grid Tracks
+            Yeh rows aur columns ka total area hota hai.
+
+        Grid Cells
+            Ek individual box ya cell jo ek row aur ek column ke intersection par hota hai.
+
+        Grid Areas
+            Multiple cells ka group jo ek specific area banata hai.
+
+
+
+    Grid Container (Parent)
+        Grid Container is the parent element that contains the grid items.
+        To create a grid container, you have to set the display property to grid or inline-grid.
+
+        Display
+        grid-template-rows/columns
+        row-gap
+        colum-gap
+        grid-gap
+        gap
+        justify-content
+        align-content
+
+    
+    Grid Items (Children)
+        Grid Items are the children of the grid container.
+        To create a grid item, you have to set the display property to grid or inline-grid.
+
+*/
+
+
+.grid-container {
+    width: 1500px;
+    margin: 10px auto;
+    padding: 20px;
+    background-image: linear-gradient(to right, gray, rgb(170, 190, 129), rgb(135, 135, 225));
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 2fr;
+    grid-template-rows: repeat(3, 150px);
+    gap: 20px;
+}
+
+.grid-item-1 {
+    background-color: #FF5733;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    /* grid-column: 1 / span 3; */
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    /* grid-row: 1 / span 2; */
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.grid-item-2 {
+    background-color: #33FF57;
+}
+
+.grid-item-3 {
+    background-color: #3357FF;
+}
+
+.grid-item-4 {
+    background-color: #F39C12;
+}
+
+.grid-item-5 {
+    background-color: #9B59B6;
+}
+
+.grid-item-6 {
+    background-color: #16A085;
+}
+
+.grid-item-7 {
+    background-color: #E74C3C;
+}
+
+.grid-item-8 {
+    background-color: #2980B9;
+}
+
+.grid-item-9 {
+    background-color: #27AE60;
+}
+
+.grid-item-10 {
+    background-color: #8E44AD;
+}
+
+.grid-item-11 {
+    background-color: #afffc3;
+}
+
+.grid-item-12 {
+    background-color: #F1C40F;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.container{
+    width: 900px;
+    margin: 10px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,150px);
+}
+
+.header{
+    background-color: #27ae60;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.menu{
+    background-color: #9b5222;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.main{
+    background-color: #3357ff;
+}
+.right{
+    background-color: #9b59b6;
+}
+.footer{
+    background-color: #f1c40f;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+

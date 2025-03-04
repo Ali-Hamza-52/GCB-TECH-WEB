@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: sans-serif;
+}
+
+:root {
+    --main-card-bg: #202124;
+    --user-card-bg: #3c4043;
+    --text-color: white;
+}
+
+.section-wrapper {
+    width: 345px;
+    background-color: var(--main-card-bg);
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-info {
+    background-color: var(--user-card-bg);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.user>img {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.user-info>i {
+    padding: 5px 11px;
+    background-color: #333537;
+    border-radius: 100%;
+}
+
+#screen{
+    border-radius: 10px;
+}
+
+.users-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8px;
+    align-items: center;
+}
+
+.user-card{
+    background-color: var(--user-card-bg);
+    border-radius: 7px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    position: relative;
+}
+
+.user-card>img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.user-card>i{
+    background-color: #34373a;
+    padding: 5px 3px;
+    border-radius: 100%;
+    position: absolute;
+    top: 6px;
+    right: 24px;
+    font-size: 10px;
+}
+
+.meeting-controls{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.meeting-controls>i{
+    padding: 16px 20px;
+    background-color: var(--user-card-bg);
+    border-radius: 100%;
+    font-size: 18px;
+}
+
+.meeting-controls>i:last-child{
+    background-color: #df463e;
+    rotate: 220deg;
+}
