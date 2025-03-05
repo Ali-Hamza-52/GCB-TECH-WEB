@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* 
+    Pseudo-classes
+        A pseudo-class is used to define a special state of an element.
+    
+    Syntax
+        selector:pseudo-class{
+        
+        }
+    
+    List of Pseudo-classes
+    
+          
+*/
+
+.pseudo {
+    padding: 20px;
+    background-color: rgb(238, 179, 179);
+}
+
+/* .pseudo:hover{
+    background-color: yellow;
+} */
+
+.pseudo>div:nth-child(even) {
+    background-color: purple;
+    color: white;
+}
+
+.pseudo>div:nth-child(odd) {
+    background-color: rgb(255, 199, 255);
+    color: black;
+}
+
+.pseudo .item:nth-child(5) {
+    background-color: yellow;
+}
+
+.pseudo .item:last-child {
+    background-color: rgb(111, 111, 28);
+}
+
+.pseudo .item:first-child {
+    background-color: rgb(187, 187, 121);
+}
+
+
+
+/* .item:nth-child(even) {
+    background-color: yellowgreen;
+}
+
+.item:nth-child(odd) {
+    background-color: rgb(56, 202, 221);
+} */
+
+.item {
+    width: 50px;
+    height: 50px;
+    border: 2px groove grey;
+}
+
+a:hover {
+    background-color: goldenrod;
+}
+
+a:active {
+    background-color: blueviolet;
+}
+
+a:visited {
+    background-color: gray;
+}
+
+table {
+    width: 50%;
+    border: 2px solid gray;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td,
+tr {
+    border: 2px solid gray;
+}
+
+tr:nth-child(even) {
+    background-color: cadetblue;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(69, 199, 105);
+}
+
+thead>tr:first-child {
+    background-color: black;
+    color: wheat;
+}
+
+tr:hover {
+    background-color: whitesmoke;
+    color: rgb(23, 6, 6);
+}
+
+td:hover {
+    background-color: rgb(52, 146, 222);
+    color: white;
+}
+
+form {
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #e2e2e2;
+    padding: 30px;
+    margin: 30px auto;
+}
+
+input:disabled {
+    background-color: blueviolet !important;
+}
+
+input:required {
+    background-color: crimson;
+}
+
+input:read-only {
+    background-color: yellowgreen;
+}
+
+input:checked {
+    cursor: help;
+}
+
+input:out-of-range {
+    background-color: rgb(254, 62, 62);
+}
+
+.pseudos>div:not(.item10) {
+    background-color: rgb(182, 255, 255);
+}
